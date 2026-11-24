@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Doctoral Council Election</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Official online election of the Doctoral Council, National Teachers College.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@500&family=Public+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <a href="./" id="homeLink" aria-label="Home"><img src="logo.png" alt="Doctoral Council logo"></a>
+    <div class="org"><b>DOCTORAL COUNCIL</b><span>National Teachers College · <span id="electionTitle">Election</span></span></div>
+    <div class="clock"><span class="pill" id="phasePill">Loading</span><br><b id="clockPH"></b><br><span id="clockLocal"></span></div>
+  </div>
+</header>
+<div class="banner" id="banner" hidden><div class="wrap" id="bannerText"></div></div>
+<main id="app"></main>
+<footer class="site">
+  <div class="wrap">
+    <span>Doctoral Council · National Teachers College · Election Committee</span>
+    <span id="footSeal"></span>
+    <a href="#officials" id="offLink">Election Committee &amp; Observers login</a>
+  </div>
+</footer>
+<div id="printArea" style="display:none"></div>
+<button class="demo-toggle" id="demoToggle" hidden>Demo controls</button>
+<div class="demo" id="demo" hidden></div>
+<script src="config.js"></script>
+<script src="logic.js"></script>
+<script src="mockdb.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
